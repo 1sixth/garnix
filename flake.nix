@@ -5,7 +5,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:Mic92/sops-nix";
     };
-    llm-agents.url = "github:numtide/llm-agents.nix";
+    llm-agents = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:numtide/llm-agents.nix";
+    };
     nix-systems-x86_64-linux.url = "github:nix-systems/x86_64-linux";
     nix-systems-default-linux.url = "github:nix-systems/default-linux";
   };
