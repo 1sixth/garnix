@@ -1,16 +1,16 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    sops-nix = {
-      inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:Mic92/sops-nix";
-    };
     llm-agents = {
       inputs.nixpkgs.follows = "nixpkgs";
       url = "github:numtide/llm-agents.nix";
     };
     nix-systems-x86_64-linux.url = "github:nix-systems/x86_64-linux";
     nix-systems-default-linux.url = "github:nix-systems/default-linux";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    sops-nix = {
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:Mic92/sops-nix";
+    };
   };
 
   outputs =
